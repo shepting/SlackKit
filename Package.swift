@@ -13,9 +13,6 @@ let package = Package(
         .library(name: "SKCore", targets: ["SKCore"]),
         .library(name: "SKWebAPI", targets: ["SKWebAPI"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/httpswift/swifter.git", .upToNextMinor(from: "1.5.0")),
-    ],
     targets: [
         .target(name: "SlackKit",
                 dependencies: ["SKCore", "SKClient"],
